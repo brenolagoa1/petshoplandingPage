@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="./imagens/logo.png" alt="Pet Shop Logo">
+        <h1>Pet Shop</h1>
+      </div>
+      <nav>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Login</a>
+      </nav>
+    </header>
+    <main>
+      <div class="image-container">
+        <div class="text-overlay">
+          <h2>Cuidamos dos seus bichinhos com muito amor!</h2>
+          <h3>Oferecemos serviços de banho, tosa e vendemos tudo para seu companheiro.</h3>
+          <h4>Venha nos conhecer!</h4>
+        </div>
+      </div>
+      <div class="actioncall_cont">
+        <div class="actioncall">
+          <p1>Está esperando o que para deixar seu melhor amigo um verdadeiro Miaudelo.</p1>
+          <p>Venha conhecer a melhor tosa da cidade, aqui até seu amigo de quatro patas bravinho terá um dia de spa.</p>
+          <p>Basta realizar seu cadastro que te chamaremos para agendar o melhor dia do seu pet.</p>
+          <button id="scroll">Fazer cadastro</button>
+          <script>
+            document.getElementById("scroll").addEventListener("click", function(){
+              window.scrollBy({
+                  top:window.innerHeight,
+                  behavior: "smooth"
+                });
+            });
+          </script>
+        </div>
+      </div>
+      <div class="formulario">
+        <form action="">
+          <p>Faça seu cadastro aqui</p>
+          <label for="name"> Nome:</label>
+          <input type="text" id="name">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone">
+          <input type="submit" value="cadastrar">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <a href="https://wa.me/5511975903627?text=Olá,%20gostaria%20de%20realizar%20um%20agendamento." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+      </a>
+      <p>PetMais o seu petshop amigo.</p>
+      <p>Endereço: Rua Jose dias, 190</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Email: petshop@PetMais.com</p>
+    </footer>
+  </body>
+</html>

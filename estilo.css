@@ -1,0 +1,280 @@
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header .menu{
+    display: flex;
+    align-items: center;
+  }
+  
+  header .menu img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  header .menu h1 {
+    margin: 0;
+    font-size: 50px;
+    margin-left: 40px;
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+  }
+  nav a:hover {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(215, 215, 215);
+    cursor: pointer;
+  }
+
+
+  
+  .image-container {
+    position: relative;
+    background-image: url("imagens/cachorro-sendo-tosado.jpg");
+    background-size: cover;
+    height: 50vw;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .image-container::after {
+    content: "";
+    position: absolute;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  
+  .text-overlay {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+    width: 50vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .text-overlay h2{
+    font-size: 2vw;
+  }
+
+  .text-overlay h3{
+    font-size: 1.5vw;
+  }
+
+  .text-overlay h4{
+    font-size: 1.5vw;
+  }
+
+  .actioncall_cont{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("./imagens/banhu.png");
+    background-size: cover;
+    height: 50vw;
+    width: 98vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .actioncall_cont .actioncall{
+
+    display: flex;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    height: 30vw;
+    width: 70vw;
+    z-index: 1;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .actioncall p1{
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .actioncall p{
+    font-size: 2vw;
+    margin-bottom: 20px;
+    
+  }
+
+  .actioncall button{
+    background-color: rgb(209, 219, 21);
+    color: rgb(68, 68, 79);
+    font-size: 24px;
+    border: 2px solid rgb(184, 195, 27);
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  .actioncall button:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  
+
+  main .formulario{
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("./imagens/cachorro-fofo-com-dono-na-pet-shop.jpg");
+    background-size: cover;
+    height: 50vw;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: solid black;
+    z-index: 1;
+    height: 45vw;
+    width: 40vw;
+    border: 8px rgba(115, 146, 168, 0.293) outset;
+  }
+  form p{
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  form label{  /* arrumar isso pra ficar responsivo*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+  }
+  form input{
+    padding: 1vw;
+    width: 20vw;
+  }
+  
+  input[type="submit"]{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2vw;
+    font-size: 2vw;
+    width: 25vw;
+    border: none;
+    padding: 1vw;
+    box-shadow: 0 5px 5px rgb(118, 118, 209);
+  }
+
+  input[type="submit"]:hover{
+    background: gray;
+    box-shadow: 0 5px 5px rgb(77, 77, 77);
+    color: white;
+  }
+
+
+
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  @media (max-width: 992px) {
+    .image-container {
+      height: 300px;
+    }
+    .text-overlay {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .actioncall_cont{
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("./imagens/banhu.png");
+      height: 70vw;
+    }
+
+    .actioncall_cont .actioncall{
+      width: 70vw;
+      height: 60vw;
+    }
+
+    main .formulario{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("./imagens/cachorro-fofo-com-dono-na-pet-shop.jpg");
+      height: 50vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-container {
+      height: 100vw;
+      background-size: cover;
+    }
+
+    .text-overlay {
+      width: 80vw;
+      height: 80vw;
+    }
+
+    .text-overlay h2{
+      font-size: 5vw;
+    }
+    .text-overlay h3{
+      font-size: 4vw;
+    }
+    .text-overlay h4{
+      font-size: 4vw;
+    }
+
+    .actioncall_cont{
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("./imagens/banhu.png");
+      height: 50vw;
+    }
+    .actioncall_cont .actioncall{
+      width: 80vw;
+      height: 50vw;
+    }
+    .actioncall p1{
+      font-size: 3.5vw;
+    }
+  
+    .actioncall p{
+      font-size: 3vw;
+    }
+  
+    .actioncall button{
+      font-size: 3vw;
+    }
+
+    main .formulario{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url("./imagens/cachorro-fofo-com-dono-na-pet-shop.jpg");
+      height: 50vw;
+    }
+  }
+  
